@@ -7,7 +7,6 @@
 
 static SceUID g_hook, g_hook2;
 static tai_hook_ref_t ref_hook0, ref_hook1;
-uint32_t text_addr, text_size, data_addr, data_size;
 
 int ret0() {
 	return 0;
@@ -61,7 +60,7 @@ int module_start(SceSize argc, const void *args) {
 		ret0);
 	
 	if (offset2) {
-		g_hook2 = taiHookFunctionOffset(&ref_hook0,
+		g_hook2 = taiHookFunctionOffset(&ref_hook1,
 			info.modid,
 			0, // segidx
 			offset2, // offset
