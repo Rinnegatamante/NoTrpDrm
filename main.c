@@ -44,6 +44,8 @@ int module_start(SceSize argc, const void *args) {
 		offset2 = 0x2d7a64;
 		break;
 	case 0x5549BF1F: // Retail 3.65 SceShell
+	case 0x34B4D82E: // Retail 3.67 SceShell
+	case 0x12DAC0F3: // Retail 3.68 SceShell
 		offset = 0x2cc4cc;
 		offset2 = 0x2d7ea8;
 		break;
